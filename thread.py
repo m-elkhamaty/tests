@@ -5,14 +5,14 @@ s.title('33 ')
 
 s.write(False)
 print("r")
-s.write({'jjjjj':'hg' 'jdv' 'ee' })
+s.write({'jjsfsfsfsjjaaaaj':'hg' 'jdv' 'ee' })
 p=s.button('prjess')
 print(p)
 s1=s.chat_input()
 s2=s.camera_input('enter')
 if(s2):
     with open(f"{s2.name}.jpg",'wb') as f:
-        f.write(s2.getvalue())
+        s.download_button(label='download',data=s2.getvalue,file_name='s2.name+.jpg',mime=None)
 if(s1):
     print(s1)
 e='''
