@@ -1,6 +1,5 @@
 import random
-import string
-
+import string 
 
 
 def pass_generator(min_chars,max_chars,digit=True,special=True):
@@ -41,9 +40,10 @@ def pass_generator(min_chars,max_chars,digit=True,special=True):
                 done=True
             
         return psw
-    except Exception as e:
-        print('max must be more than min')
-        return
+    except ValueError:
+        print('value error')
+        
+    
 
 
 print(pass_generator(9,19,True,True))
